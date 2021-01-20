@@ -1,0 +1,10 @@
+  首先,你需要执行下面两条命令,作为git的基础配置,作用是告诉git你是谁,你输入的信息将出现在你创建的提交中.
+git config --global user.name "你的名字或昵称"
+git config --global user.email "你的邮箱"
+  然后输入命令：git init （表示此文件夹需要被git管理）
+此时目录下会多了一个.git的文件夹，表示你的目录已经被git管理
+  然后把你的代码拷贝到这个目录下
+  然后输入命令：git add . (add 表示把文件添加到git的缓存区，下一步就可以提交了， .（点）表示添加所有)
+  然后输入：git commit -m "提交的日志信息"（这里就把缓存区的东西提交到了本地仓库）
+  然后输入：git remote add origin https://github.com/SmallestDeed/Test2.git(后面的https就是你的github里的新建的仓库的https地址)
+  然后输入：git push -u origin master (这里就把本地仓库的代码推到了github的仓库中了，第一次的时候可能需要输入github账号和密码)
