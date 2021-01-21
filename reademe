@@ -1,6 +1,7 @@
   首先,你需要执行下面两条命令,作为git的基础配置,作用是告诉git你是谁,你输入的信息将出现在你创建的提交中.
 git config --global user.name "你的名字或昵称"
 git config --global user.email "你的邮箱"
+git branch -M main
   然后输入命令：git init （表示此文件夹需要被git管理）
 此时目录下会多了一个.git的文件夹，表示你的目录已经被git管理
   然后把你的代码拷贝到这个目录下
